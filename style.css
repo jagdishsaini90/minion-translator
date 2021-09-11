@@ -1,0 +1,76 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("/minion.jpg");
+  background-position: top top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(8px);
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+h1 {
+  color: rgb(182, 182, 10);
+  font-size: 100px;
+  text-shadow: 5px 5px 6px rgb(182, 182, 10);
+  margin-top: 4rem;
+}
+
+input {
+  min-width: 40vw;
+  height: 40px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: steelblue;
+  border-radius: 10px;
+}
+
+#output {
+  max-width: 60vw;
+  min-width: 60vw;
+  min-height: 30vh;
+  border: 2px solid rgb(99, 99, 248);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+  overflow-x: auto;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 40px;
+  }
+  input {
+    min-width: 70vw;
+    margin-top: 2rem;
+  }
+
+  body {
+    background-position: center center;
+  }
+}
